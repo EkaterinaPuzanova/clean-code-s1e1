@@ -107,7 +107,7 @@ var editTask=function(){
         
         editInput.value=label.innerText;
         input.className="input input_edit input-text task";
-        label.className="label label_edit task";
+        label.className="label task label_edit";
         editBtn.innerText="Save";
     }
 
