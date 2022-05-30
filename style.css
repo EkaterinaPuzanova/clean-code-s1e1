@@ -51,6 +51,7 @@ input,button{
 .button:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 .title {
   color: #333;
@@ -95,10 +96,6 @@ input-text:focus {
   justify-content: space-between;
   align-items: center;
 }
-/* li > * {
-  vertical-align: middle;
-} */
-
 .input-checkbox {
   margin: 0 10px;
 }
@@ -125,22 +122,23 @@ input-text:focus {
   text-decoration: line-through;
   color: #888;
 }
+
 /* Edit Task */
 .input {
   display:none;
 }
-
 .input_edit {
   display:inline-block;
   width:224px;
 }
-
 .label_edit {
   display:none;
 }  
 
 @media (max-width:768px) {
+
   .header { 
     text-align: center;
   }
+
 }
