@@ -42,11 +42,13 @@ ul {
   padding: 0;
 }
 
-li, h3 {
+li,
+h3 {
   list-style: none;
 }
 
-input,button {
+input,
+button {
   outline: none;
 }
 
@@ -109,7 +111,8 @@ input-text:focus {
 
 /* Task list */
 
-.incomplete-tasks__item, .completed-tasks__item {
+.incomplete-tasks__item,
+.completed-tasks__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -166,6 +169,7 @@ input-text:focus {
 .label_edit {
   display: none;
 }  
+
 @media (max-width:768px) {
 
   .header { 
