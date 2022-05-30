@@ -30,7 +30,7 @@
 .task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .add-task__task-row-wrapper {
@@ -130,7 +130,7 @@ input-text:focus {
 }
 
 .input {
-  width: 226px
+  width: 226px;
 }
 
 .img-del {
