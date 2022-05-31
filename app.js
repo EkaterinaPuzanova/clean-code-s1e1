@@ -50,7 +50,7 @@ var createNewTaskElement=function(taskString){
     editButton.className="edit button";
 
     deleteButton.className="del button";
-    deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.src='./assets/svg/remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
 
@@ -100,14 +100,15 @@ var editTask=function(){
         //label becomes the inputs value.
         
         label.innerText=editInput.value;
-        input.className="input input-text task";                                     
-        label.className="label task";
+        input.classList.remove("input_edit"); 
+        label.classList.remove("label_edit");                                    
+        //label.className="label task";
         editBtn.innerText="Edit";
     }else{
         
         editInput.value=label.innerText;
-        input.className="input input_edit input-text task";
-        label.className="label task label_edit";
+        input.classList.add("input_edit");
+        label.classList.add("label_edit");
         editBtn.innerText="Save";
     }
 
@@ -135,7 +136,7 @@ var taskCompleted=function(){
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
     var labelCompleted=listItem.getElementsByTagName("label")[0];
-    labelCompleted.className="label label_completed task";
+    labelCompleted.classList.add("label_completed");
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
@@ -149,7 +150,7 @@ var taskIncomplete=function(){
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
     var labelInComplete=listItem.getElementsByTagName("label")[0];
-    labelInComplete.className="label task";
+    labelInComplete.classList.remove("label_completed");
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }
